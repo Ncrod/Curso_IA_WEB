@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lucía Mora | Desarrolladora Frontend freelance</title>
+  <meta name="description" content="Portafolio de Lucía Mora, desarrolladora frontend freelance. Sitios web rápidos, accesibles y responsive con HTML, CSS y JavaScript.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ENCABEZADO + NAVEGACIÓN -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#inicio" aria-label="Lucía Mora, ir al inicio">LM<span>.</span></a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button"
+              aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="nav" id="nav-menu" aria-label="Principal">
+        <ul class="nav__list">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a class="btn btn--small" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- HERO -->
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+      <div class="container hero__inner">
+        <p class="eyebrow">Desarrolladora Frontend freelance</p>
+        <h1 id="hero-titulo">Sitios web claros, rápidos y accesibles para tu negocio.</h1>
+        <p class="hero__lead">Diseño y programo páginas con HTML, CSS y JavaScript puro que funcionan bien en cualquier dispositivo y que tu equipo puede mantener.</p>
+        <div class="hero__actions">
+          <a class="btn" href="#contacto">Cotizar mi proyecto</a>
+          <a class="btn btn--ghost" href="#proyectos">Ver proyectos</a>
+        </div>
+        <ul class="hero__stats" aria-label="Datos destacados">
+          <li><strong>30+</strong> proyectos entregados</li>
+          <li><strong>5 años</strong> de experiencia</li>
+          <li><strong>100%</strong> responsive</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="section" id="servicios" aria-labelledby="servicios-titulo">
+      <div class="container">
+        <header class="section__head">
+          <h2 id="servicios-titulo">Servicios</h2>
+          <p>Tres formas de trabajar juntos, según la etapa de tu proyecto.</p>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">&lt;/&gt;</div>
+            <h3>Landing pages</h3>
+            <p>Páginas de una sola vista para promocionar un producto o captar contactos, con foco en conversión.</p>
+            <a class="btn btn--small" href="#contacto" data-servicio="Landing page">Quiero una landing</a>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">&#9638;</div>
+            <h3>Sitios corporativos</h3>
+            <p>Sitios de varias secciones con identidad visual coherente, formularios y estructura lista para crecer.</p>
+            <a class="btn btn--small" href="#contacto" data-servicio="Sitio corporativo">Quiero un sitio</a>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">&#10003;</div>
+            <h3>Mejora y accesibilidad</h3>
+            <p>Reviso tu sitio actual: rendimiento, diseño responsive, accesibilidad y buenas prácticas de código.</p>
+            <a class="btn btn--small" href="#contacto" data-servicio="Mejora y accesibilidad">Quiero una revisión</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="section section--alt" id="proyectos" aria-labelledby="proyectos-titulo">
+      <div class="container">
+        <header class="section__head">
+          <h2 id="proyectos-titulo">Proyectos destacados</h2>
+          <p>Una muestra del trabajo reciente. Cada proyecto incluye reto, solución y resultado.</p>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="card card--project">
+            <div class="card__media card__media--a" role="img" aria-label="Vista previa de la tienda Café Origen"></div>
+            <h3>Café Origen</h3>
+            <p class="tag">Tienda virtual</p>
+            <p>Catálogo y carrito simple para una tostadora local. Carga en menos de 2 segundos en móvil.</p>
+          </article>
+
+          <article class="card card--project">
+            <div class="card__media card__media--b" role="img" aria-label="Vista previa del sitio de eventos UniFest"></div>
+            <h3>UniFest</h3>
+            <p class="tag">Eventos universitarios</p>
+            <p>Agenda filtrable y formulario de inscripción accesible para un festival estudiantil.</p>
+          </article>
+
+          <article class="card card--project">
+            <div class="card__media card__media--c" role="img" aria-label="Vista previa del panel Taskly"></div>
+            <h3>Taskly</h3>
+            <p class="tag">Landing de aplicación</p>
+            <p>Landing para una app de gestión de tareas, con secciones de precios y preguntas frecuentes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section class="section" id="sobre-mi" aria-labelledby="sobre-titulo">
+      <div class="container about">
+        <div>
+          <h2 id="sobre-titulo">Sobre mí</h2>
+          <p>Soy Lucía, desarrolladora frontend. Me gusta que cada sitio sea fácil de usar, fácil de leer y fácil de mantener. Trabajo de forma cercana: primero defino contigo el objetivo, luego diseño, y entrego código limpio y documentado.</p>
+        </div>
+        <ul class="skills" aria-label="Tecnologías">
+          <li>HTML semántico</li>
+          <li>CSS moderno (Grid y Flexbox)</li>
+          <li>JavaScript</li>
+          <li>Accesibilidad (WCAG)</li>
+          <li>Diseño responsive</li>
+          <li>Git y GitHub</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="section section--alt" id="testimonios" aria-labelledby="testimonios-titulo">
+      <div class="container">
+        <header class="section__head">
+          <h2 id="testimonios-titulo">Lo que dicen mis clientes</h2>
+        </header>
+
+        <div class="grid grid--3">
+          <figure class="card quote">
+            <blockquote><p>Entregó antes de lo acordado y el sitio se ve perfecto en el celular.</p></blockquote>
+            <figcaption>Marta G. <span>Dueña de Café Origen</span></figcaption>
+          </figure>
+          <figure class="card quote">
+            <blockquote><p>El formulario de inscripción redujo nuestros errores a casi cero.</p></blockquote>
+            <figcaption>Daniel R. <span>Organizador de UniFest</span></figcaption>
+          </figure>
+          <figure class="card quote">
+            <blockquote><p>Código ordenado: mi equipo pudo seguir editando sin problemas.</p></blockquote>
+            <figcaption>Sofía P. <span>Fundadora de Taskly</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section" id="contacto" aria-labelledby="contacto-titulo">
+      <div class="container contact">
+        <header class="section__head">
+          <h2 id="contacto-titulo">Hablemos de tu proyecto</h2>
+          <p>Cuéntame qué necesitas y te respondo en un máximo de 48 horas.</p>
+        </header>
+
+        <form class="form" id="contact-form" novalidate>
+          <div class="field">
+            <label for="nombre">Nombre <span class="req" aria-hidden="true">*</span></label>
+            <input id="nombre" name="nombre" type="text" autocomplete="name" required aria-describedby="nombre-error">
+            <p class="error" id="nombre-error" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Correo electrónico <span class="req" aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+            <p class="error" id="email-error" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="servicio">Servicio de interés</label>
+            <select id="servicio" name="servicio">
+              <option value="">Selecciona una opción</option>
+              <option>Landing page</option>
+              <option>Sitio corporativo</option>
+              <option>Mejora y accesibilidad</option>
+              <option>Otro</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="mensaje">Mensaje <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="mensaje" name="mensaje" rows="5" required minlength="10" aria-describedby="mensaje-error"></textarea>
+            <p class="error" id="mensaje-error" role="alert"></p>
+          </div>
+
+          <button class="btn" type="submit">Enviar mensaje</button>
+          <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Lucía Mora. Proyecto de práctica.</p>
+      <ul class="footer-links">
+        <li><a href="#inicio">Volver arriba</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
